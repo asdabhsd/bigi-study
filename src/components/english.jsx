@@ -7,8 +7,8 @@ import { TbMessageDots } from "react-icons/tb";
 import { FaTelegram, FaFacebook, FaInstagram } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
-
+import certificate from "../certificates/certificate.jpg"
+import certificate2 from "../certificates/certificate2.jpg"
 import { GrLanguage } from "react-icons/gr";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -20,7 +20,6 @@ import video8 from "../videos/video8.mp4";
 import video9 from "../videos/video9.mov";
 import { Autoplay, Keyboard, Pagination, Navigation, FreeMode } from "swiper/modules";
 import { HashLink } from "react-router-hash-link";
-
 import quality from "../assets/quality.png";
 import truck from "../assets/truck.png";
 import rightarrow from "../assets/rightarrow.png"
@@ -35,20 +34,34 @@ import noor from "../flowing images/noor.jpg"
 import taxir from "../flowing images/taxir.webp"
 import { NavLink } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
-;
+import { RiFullscreenFill } from "react-icons/ri";
+import { RxCross1 } from "react-icons/rx";
 
 export default function English() {
-
+ 
+  
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [language, setLanguage] = useState(false)
+  const [big, SetBig] = useState(false);
+  const [big1, SetBig1] = useState(false);
+  
   const toggleMenu = () => {
     setIsOpen(prev => !prev);
   };
   const toggleLan = () =>{
-    setLanguage(prev => !prev)
+    setLanguage(prev1 => !prev1)
   }
-
+  
+  
+  const small = () => {
+    SetBig(true);
+  };
+  
+  const small1 = () => {
+    SetBig1(true);
+  };
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {  // scroll threshold
@@ -62,6 +75,7 @@ export default function English() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
   return (
     <>
        <div className="neww">
@@ -73,10 +87,12 @@ export default function English() {
 
       {isOpen && (
         <div className="menu-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
+          <a href="#Home">Home</a>
+          <a href="#About">About</a>
           <a href="#News">News</a>
-          <a href="#partners">Partners</a>
+          <a href="#Facts">Facts</a>
+          <a href="#Statistics">Statistics</a>
+          <a href="#Partners">Partners</a>
         </div>
       )}
     </div>
@@ -171,6 +187,9 @@ export default function English() {
 
       {/* Social icons */}
       <section className="social-container">
+        <div className="al">
+        <RxCross1 className="kros"/>
+        </div>
         <a href="https://t.me/bigiedu_admin"
       target="_blank"
       rel="noopener noreferrer"
@@ -257,39 +276,39 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
 >
   <SwiperSlide className="slides">
     <div className="videos1">
-    <div className="video1">
+    <div className="video1 doston">
     <video controls className="videos" src={video1}></video>
     <p>A suggestion from a logistics specialist, Adbdurakhmanov Doston</p>
     </div>
-      <div className="video2">
+      <div className="video3 video33">
         <video className="videos" src={video2} controls></video>
         <p>A master class from a dispatching specialist, Rustamov Rahmatulloh</p>
       </div>
+      <div className="video3 video333">
+      <video controls className="videos" src={video3}></video>
+      <p>An insight on studying at the academy from an HR manager, Akhmadjanov Farrukh</p>
+      </div>
     </div>
+
   </SwiperSlide>
 
   <SwiperSlide className="slides">
   <div className="videos1">
-<div className="video1">
-<video controls className="videos" src={video3}></video>
-<p>An insight on studying at the academy from an HR manager, Akhmadjanov Farrukh</p>
-</div>
-    <div className="video2">
-    <video controls className="videos" src={video4}></video>
-    <p>BIG-I STUDY is something you are looking for to be your own professional_Nurmukhammad Rustamov_GTL Logistics Update specialist</p>
-    </div>
-  </div>
-  </SwiperSlide>
-  <SwiperSlide className="slides">
-<div className="videos1">
-<div className="video1">
+<div className="video1 push1">
 <video controls className="videos" src={video8}></video>
 <p>A comment from the academy graduate and Fleet specialist, Usmanov Abdukadir</p>
 </div>
+    <div className="video2 push2">
+    <video controls className="videos" src={video4}></video>
+    <p>BIG-I STUDY is something you are looking for to be your own professional_Nurmukhammad Rustamov_GTL Logistics Update specialist</p>
+    </div>
+    <div className="video3 push3">
     <div className="video2"><video controls className="videos" src={video9}></video>
     <p>My journey to an earning stage at logistics_Akhrorkhanov Azizbek_ELD manager</p></div>
-</div>
+    </div>
+  </div>
   </SwiperSlide>
+
 </Swiper>
 
 
@@ -385,7 +404,10 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
 
         </div>
       </main>
-      <div id="Partners" className="About">
+      <div onClick={() => {
+  SetBig(false);
+  SetBig1(false);
+}} id="Partners" className="About">
           <h2>Partners</h2>
           <p>Companies who trust us</p>
           <div className="chiziq end">
@@ -397,21 +419,23 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
 
       <div className="ticker">
   <div className="ticker-track">
-    <img src={arava} alt="" />
-    <img src={artel} alt="" />
-    <img src={dock} alt="" />
-    <img src={express} alt="" />
-    <img src={global} alt="" />
-    <img src={hally} alt="" />
-    <img src={itpark} alt="" />
-    <img src={taxir} alt="" />
-    <img className="noor" src={noor} alt="" /> 
+  <a href="https://aravancargo.com/"><img src={arava} alt="" /></a>
+<a href="https://artellogistics.com/"><img src={artel} alt="" /></a>
+<a href="https://www.d2dtransport.org/"><img src={dock} alt="" /></a>
+<a href="https://expresscargo.uz/"><img src={express} alt="" /></a>
+<a href="https://www.eoglobalinc.com/"><img src={global} alt="" /></a>
+<a href="https://www.linkedin.com/company/hally-express-inc"><img src={hally} alt="" /></a>
+<a href="https://it-park.uz/uz/itpark/news/namangan-viloyatida-yangi-it-markaz-ochildi"><img src={itpark} alt="" /></a>
+<a href="instagram.com/taxir.logistics/"><img src={taxir} alt="" /></a>
+<a href="https://www.nooreldsolutions.com/Contact"><img className="noor" src={noor} alt="" /></a>
+
   </div>
 </div>
 
-
-<footer>
-  
+<footer onClick={() => {
+  SetBig(false);
+  SetBig1(false);
+}}>
   <div className="address">
     <h4>Our address</h4>
     <p>Namangan IT PARK 2nd house, Amir Temur street, Namangan city, Namangan region, Republic of Uzbekistan</p>
@@ -420,7 +444,7 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
         src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d24088.554169029252!2d71.659337!3d41.001857!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzA2LjciTiA3McKwMzknMzMuNiJF!5e0!3m2!1sen!2sus!4v1755135674384!5m2!1sen!2sus"
         width="100%"
         height="200px"
-        style={{ border: 0 ,borderRadius: '15px'}}
+        style={{ border: 0 ,borderRadius: '15px', marginTop: '35px'}}
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
@@ -429,13 +453,16 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
  <div className="other">
  <div className="documents">
     <h4>Documents</h4>
-   <a href=""><p>licence</p></a>
-    <p>Certificate</p>
-    <p>Affidavit</p>
+   <a href="https://bigi.uz/static/media/Tasdiqnoma.5d52b6f1064f55a1ac7a.pdf"><p>licence</p></a>
+    <a href="https://bigi.uz/static/media/Tasdiqnoma.5d52b6f1064f55a1ac7a.pdf"><p>Certificate</p></a>
+   <a href="https://bigi.uz/static/media/Affidavit.2bf6195cbde30d929bb1.pdf" ><p>Affidavit</p>  </a>
   </div>
-  <div className="email">
+  <div className="email ss">
       <h4>E-mail</h4>
-      <p>studybigi@gmail.com</p>
+      <a href="mailto:studybigi@gmail.com">
+  <p>studybigi@gmail.com</p>
+</a>
+
   </div>
   <div className="contact">
     <h4>Contact numbers</h4>
@@ -443,8 +470,38 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
     <p>+99890 553 90 95</p>
   </div>
  </div>
+ 
   <p className="copy ofenglish">Copyright © 2025 ETAMIN</p>
 </footer>
+<div className="cer">
+  <div className="cer1">
+    <img  onClick={small}  src={certificate} alt="" />
+  
+{big && (
+  <div className="bigimage">
+    <img src={certificate} alt="" />
+    <RxCross1 
+      className="exit" 
+      onClick={() => SetBig(false)} // Exit bosilganda yopiladi
+    />
+  </div>
+)}
+{big1 && (
+  <div className="bigimage1 bi">
+   <img src={certificate2} alt="" />
+    <RxCross1 
+      className="exit" 
+      onClick={() => SetBig1(false)} // Exit bosilganda yopiladi
+    />
+  </div>
+)}
+
+  </div>
+  <div className="cer2">
+      <img  onClick={small1}  src={certificate2} alt="" />
+     
+  </div>
+ </div>
     </>
   );
 }

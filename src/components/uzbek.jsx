@@ -1,13 +1,17 @@
+
 import { useState, useEffect } from "react";
 import banner from "../assets/banner.png";
 import logo from "../assets/Screenshot_2025-08-13_133729-removebg-preview.png";
+import { FaGlobe } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import { TbMessageDots } from "react-icons/tb";
 import { FaTelegram, FaFacebook, FaInstagram } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import  '../components/uzbek.css'
-import { NavLink } from "react-router-dom";
+import certificate from "../certificates/certificate.jpg"
+import certificate2 from "../certificates/certificate2.jpg"
+import { RxCross1 } from "react-icons/rx";
+import { GrLanguage } from "react-icons/gr";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import video1 from "../videos/video1.mp4";
@@ -16,9 +20,9 @@ import video3 from "../videos/video3.mp4";
 import video4 from "../videos/video4.mp4";
 import video8 from "../videos/video8.mp4";
 import video9 from "../videos/video9.mov";
-import { Autoplay, Pagination, Navigation,  } from "swiper/modules";
+import { Autoplay, Keyboard, Pagination, Navigation, FreeMode } from "swiper/modules";
 import { HashLink } from "react-router-hash-link";
-import language from "../assets/language.png";
+import { RiFullscreenFill } from "react-icons/ri";
 import quality from "../assets/quality.png";
 import truck from "../assets/truck.png";
 import rightarrow from "../assets/rightarrow.png"
@@ -31,7 +35,9 @@ import hally from "../flowing images/hally.jpg"
 import itpark from "../flowing images/itpark.jpg"
 import noor from "../flowing images/noor.jpg"
 import taxir from "../flowing images/taxir.webp"
+import { NavLink } from "react-router-dom";
 
+import language1 from "../assets/language.png"
 export default function Uzbek() {
 
   const [scrolled, setScrolled] = useState(false);
@@ -49,8 +55,56 @@ export default function Uzbek() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [language, setLanguage] = useState(false)
+  const [big, SetBig] = useState(false);
+  const [big1, SetBig1] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(prev => !prev);
+  };
+  const small1 = () => {
+    SetBig1(true);
+  };
+  const toggleLan = () =>{
+    setLanguage(prev => !prev)
+  }
+  const small = () => {
+    SetBig(true);
+  };
+  
   return (
     <>
+       <div className="neww">
+   <img src={logo} alt="" />
+    <div className="menu-container">
+      <div className="menu-icon" onMouseUp={toggleMenu}>
+        ☰
+      </div>
+
+      {isOpen && (
+        <div className="menu-links">
+          <a href="/uzbek#Home1">Home</a>
+          <a href="/uzbek#About">About</a>
+          <a href="/uzbek#News">News</a>
+          <a href="/uzbek#Facts">Facts</a>
+          <a href="/uzbek#Statistics">Statistics</a>
+          <a href="/uzbek#Partners">Partners</a>
+        </div>
+      )}
+    </div>
+    <div className="men">
+    <GrLanguage onClick={toggleLan} className='lan'/>
+    {language && (
+        <div className="til">
+            <a href="">uz</a>
+            <a href="">eng</a>
+            <a href="">ru</a>
+        </div>
+    )
+
+    }
+    </div>
+   </div>
       {/* Banner */}
      <div className="uzz">
      <img src={banner} alt="Banner" className="banner" />
@@ -64,10 +118,12 @@ export default function Uzbek() {
       {/* Smooth scroll links */}
       <HashLink smooth to="/uzbek#Home1" className="btn">Asosiy</HashLink>
       
-      <div className="s">
+    <HashLink className="ol-" smooth to='/uzbek#na'>
+    <div className="s">
           <p>biz</p>
           <p>haqimizda</p>
       </div>
+    </HashLink>
       
       <HashLink smooth to="/uzbek/#News1" className="btn">Yangiliklar</HashLink>
       <HashLink smooth to="/uzbek#Facts1" className="btn">Faktlar</HashLink>
@@ -85,7 +141,7 @@ export default function Uzbek() {
     </div>
   </div>
 </header>
-<HashLink smooth to="/uzbek#About1" className="ni">
+<HashLink smooth to="#na" className="ni">
 <p>Biz haqimizda</p>
 </HashLink>
 {/* Home Section */}
@@ -126,7 +182,7 @@ export default function Uzbek() {
     <div className="chiziq"></div>
   </div>
 
-  <div className="About-text">
+  <div id="na" className="About-text">
     <div className="text1">
       <h4>"Ming mil sayohat ko‘plab kichik qadamlarni o‘z ichiga oladi"</h4>
       <h5>- londor shifokor tomonidan</h5>
@@ -160,57 +216,73 @@ export default function Uzbek() {
     <div className="chiziq"></div>
   </div>
 
+    
   <Swiper
-    spaceBetween={30}
-    centeredSlides={true}
-    pagination={{ clickable: true }}
-    keyboard={{ enabled: true }}
-    navigation={true}
-    loop={true}
-    modules={[Autoplay, Pagination, Navigation]}
-    className="mySwiper"
-    onSlideChange={() => {
-      document.querySelectorAll(".mySwiper video").forEach((video) => {
-        video.pause();
-        video.currentTime = 0;
-      });
-    }}
-    onKeyDown={(e) => {
-      if (e.key === "Enter") {
-        const activeSlide = document.querySelector(".swiper-slide-active");
-        const video = activeSlide?.querySelector("video");
-        if (video) {
-          video.play();
-        }
+  spaceBetween={30}
+  centeredSlides={true}
+  pagination={{ clickable: true }}
+  keyboard={{ enabled: true }}
+  navigation={true}
+  loop={true}
+
+  modules={[Autoplay, Pagination, Navigation]}
+  className="mySwiper"
+  onSlideChange={() => {
+    // Slayd o‘zgarganda barcha videolarni pauza qilish
+    document.querySelectorAll(".mySwiper video").forEach((video) => {
+      video.pause();
+      video.currentTime = 0; // Ixtiyoriy: videoni boshiga qaytarish
+    });
+  }}
+  onKeyDown={(e) => {
+    if (e.key === "Enter") {
+      const activeSlide = document.querySelector(".swiper-slide-active");
+      const video = activeSlide?.querySelector("video");
+      if (video) {
+        video.play();
       }
-    }}
-    tabIndex={0}
-  >
-    <SwiperSlide className="slides">
-      <video controls className="videos" src={video1}></video>
-      <p>Logistika mutaxassisi, Abdurakhmanov Dostonning tavsiyasi</p>
-    </SwiperSlide>
-    <SwiperSlide className="slides">
-      <video controls className="videos" src={video2}></video>
-      <p>Dispatching mutaxassisi, Rustamov Rahmatullohning master klasi</p>
-    </SwiperSlide>
-    <SwiperSlide className="slides">
-      <video controls className="videos" src={video3}></video>
-      <p>Akademiyada o‘qish bo‘yicha HR menejer, Akhmadjanov Farrukh fikri</p>
-    </SwiperSlide>
-    <SwiperSlide className="slides">
-      <video controls className="videos" src={video4}></video>
-      <p>BIG-I STUDY siz qidirayotgan professional bo‘lishingiz uchun_Nurmukhammad Rustamov_GTL Logistics yangilanish mutaxassisi</p>
-    </SwiperSlide>
-    <SwiperSlide className="slides">
-      <video controls className="videos" src={video8}></video>
-      <p>Akademiya bitiruvchisi va Flot mutaxassisi, Usmanov Abdukadirning fikri</p>
-    </SwiperSlide>
-    <SwiperSlide className="slides">
-      <video controls className="videos" src={video9}></video>
-      <p>Mening logistika bo‘yicha daromad bosqichiga safarim_Akhrorkhanov Azizbek_ELD menejer</p>
-    </SwiperSlide>
-  </Swiper>
+    }
+  }}
+  tabIndex={0} // Swiper'ni fokuslanadigan qilib, klaviatura hodisalarini qabul qilishi uchun
+>
+  <SwiperSlide className="slides">
+    <div className="videos1">
+      <div className="video1">
+        <video controls className="videos" src={video1}></video>
+        <p>Logistika mutaxassisidan tavsiya — Abdurahmonov Doston</p>
+      </div>
+      <div className="video3 video33">
+        <video className="videos" src={video2} controls></video>
+        <p>Dispetcherlik mutaxassisidan master-klass — Rustamov Rahmatulloh</p>
+      </div>
+      <div className="video3 video333">
+        <video controls className="videos" src={video3}></video>
+        <p>Akademiyada o‘qish haqida HR-menedjer fikri — Axmadjonov Farrux</p>
+      </div>
+    </div>
+  </SwiperSlide>
+
+  <SwiperSlide className="slides">
+    <div className="videos1">
+      <div className="video1">
+        <video controls className="videos" src={video8}></video>
+        <p>Akademiya bitiruvchisi va flot mutaxassisidan izoh — Usmonov Abduqodir</p>
+      </div>
+      <div className="video2">
+        <video controls className="videos" src={video4}></video>
+        <p>BIG-I STUDY — o‘z kasbiy yo‘lingizni topishda izlayotgan narsangiz
+        — Nurmuhammad Rustamov, GTL Logistics yangilanish mutaxassisi</p>
+      </div>
+      <div className="video3">
+        <div className="video2">
+          <video controls className="videos" src={video9}></video>
+          <p>Logistikada daromad topish yo‘lim — Axrorkhonov Azizbek, ELD menejeri</p>
+        </div>
+      </div>
+    </div>
+  </SwiperSlide>
+</Swiper>
+
 </div>
 {/* Facts Section */}
 <main id="Facts1">
@@ -222,7 +294,7 @@ export default function Uzbek() {
 
   <div className="fact-container">
     <div className="fact">
-      <img src={language} alt="" />
+      <img src={language1} alt="" />
       <h4>Tilni rivojlantirish</h4>
       <p>Asosiy kursdan oldin sizning ingliz tilingiz Amerika biznes inglizi ekspertizasi orqali oshiriladi!</p>
       <img className="arrow1" src={rightarrow} alt="" />
@@ -320,7 +392,10 @@ export default function Uzbek() {
 </div>
 
 {/* Footer Section */}
-<footer>
+<footer onClick={() => {
+  SetBig(false);
+  SetBig1(false);
+}}>
   <div className="address">
     <h4>Bizning manzil</h4>
     <p>Namangan IT PARK 2-uy, Amir Temur ko‘chasi, Namangan shahri, Namangan viloyati, O‘zbekiston Respublikasi</p>
@@ -335,23 +410,53 @@ export default function Uzbek() {
       referrerPolicy="no-referrer-when-downgrade"
     ></iframe>
   </div>
-  <div className="documents">
+  <div className="documents d1">
     <h4>Hujjatlar</h4>
     <p>Litsenziya</p>
     <p>Certifikat</p>
     <p>Ariza</p>
   </div>
-  <div className="email">
+  <div className="email a1">
     <h4>E-mail</h4>
     <p>studybigi@gmail.com</p>
   </div>
-  <div className="contact">
+    
+  <div className="aloqa">
     <h4>Aloqa raqamlari</h4>
     <p>+998 95 727 00 17</p>
     <p>+998 99 320 00 17</p>
   </div>
   <p className="copy ofuzbek">Mualliflik huquqi © 2025 ETAMIN</p>
 </footer>
+<div className="cer">
+  <div className="cer1">
+    <img src={certificate} alt="" />
+    <RiFullscreenFill onClick={small} className="full full1"/>
+{big && (
+  <div className="bigimage">
+    <img src={certificate} alt="" />
+    <RxCross1 
+      className="exit" 
+      onClick={() => SetBig(false)} // Exit bosilganda yopiladi
+    />
+  </div>
+)}
+{big1 && (
+  <div className="bigimage1 bi">
+   <img src={certificate2} alt="" />
+    <RxCross1 
+      className="exit" 
+      onClick={() => SetBig1(false)} // Exit bosilganda yopiladi
+    />
+  </div>
+)}
+
+  </div>
+  <div className="cer2">
+      <img src={certificate2} alt="" />
+      <RiFullscreenFill onClick={small1} className="full full2" />
+  </div>
+ </div>
      </div>
     </>
   );
