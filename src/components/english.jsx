@@ -101,9 +101,10 @@ export default function English() {
     <GrLanguage onClick={toggleLan} className='lan'/>
     {language && (
         <div className="til">
-            <a href="">uz</a>
-            <a href="">eng</a>
-            <a href="">ru</a>
+           
+           <NavLink to='/' className="language-option">EN</NavLink>
+              <NavLink to="/uzbek" className="language-option">UZ</NavLink>
+              <NavLink to="/russian" className="language-option">RU</NavLink>
         </div>
     )
 
@@ -158,7 +159,7 @@ export default function English() {
             
 
             <div className="navlink">
-            <NavLink to='/' className="language-option">EN</NavLink>
+            <NavLink className="language-option">EN</NavLink>
              <NavLink to="/uzbek" className="language-option">UZ</NavLink>
              <NavLink to="/russian" className="language-option">RU</NavLink>
             </div>
@@ -381,7 +382,7 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
           </div>
         </section>
         <div className="then">
-          <div className="small sm3">
+        <div className="small sm3">
             <h4>Statistics #3</h4>
             <p>There are over 1 million for-hire trucking carriers in the U.S.</p>
             <div className="hundred">
@@ -412,6 +413,41 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
 
         </div>
       </main>
+
+      <div className="ng">
+      <div className="later">
+      <div className="sml">
+            <h4>Statistics #3</h4>
+            <p>There are over 1 million for-hire trucking carriers in the U.S.</p>
+            <div className="hundred">
+              <div className="foiz ns">
+              <p className="ss">Applications 88%</p>
+              </div>
+              </div>
+      </div>
+      <div className="sml">
+            <h4>Statistics #4</h4>
+            <p>U.S. trucks moved over 11 billion tons of freight in the U.S.</p>
+            <div className="hundred">
+              <div className="foiz">
+                <p>passes about 314,840 km.
+                </p>
+              </div>
+              </div>
+      </div>
+      <div className="sml g">
+            <h4>Statistics #5</h4>
+            <p>The U.S. trucking industry generated revenue that was worth more than the Gross Domestic Product (GDP) of at least 150 countries combined in 2023.</p>
+            <div className="hundred">
+              <div className="foiz">
+                <p>100%
+                </p>
+              </div>
+              </div>
+      </div>
+
+      </div>
+      </div>
       <div onClick={() => {
   SetBig(false);
   SetBig1(false);
@@ -455,6 +491,7 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
         style={{ border: 0 ,borderRadius: '15px', marginTop: '35px'}}
         allowFullScreen
         loading="lazy"
+        className="brr"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
   </div>
@@ -503,6 +540,8 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
     />
   </div>
 )}
+<p className="right">Copyright © 2024
+ETAMIN</p>
 
   </div>
   <div className="cer2">

@@ -1529,6 +1529,9 @@ top: 55px;
     padding: 10px;
     width: 380px;
   }
+  .body{
+    overflow-x: hidden;
+  }
   .text2{
    position: relative;
    top: -150px;
@@ -1632,10 +1635,83 @@ top: 55px;
     margin-top: -40px;
   }
   .sm3{
-    position: relative;
-    bottom: 300px !important;
-    left: 100px !important;
+    position: absolute;
+    top: -300px;
+    
   }
+  .later{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    gap: 30px;
+    opacity: 1 !important;
+    position: absolute;
+    top: 6920px;
+    left: 40px;
+    
+  }
+  .ng{
+    display: block;
+    opacity: 1 !important;
+  }
+  .main{
+    margin-top: -0px;
+    margin-right: 50px;
+    
+  }
+  .g{
+    height: 200px !important;
+  }
+  .brr{
+    width: 88% !important;
+  }
+  .cer{
+    top: 8700px;
+    left: 100px;
+    display: block;
+    position: absolute;
+    
+  }
+  .cer1{
+    border-radius: 20px !important;
+  }
+  .cer div:last-child{
+    border-radius: 30px;
+    position: relative;
+    right: 110px;
+  }
+  footer{
+    height: 1200px;
+  }
+  
+  .right{
+    z-index: 9999;
+    background-attachment: red;
+    color: white;
+    position: relative;
+    top: 250px;
+    display: block !important;
+    opacity: 1 !important;
+  }
+  .sml{
+    background-color: #ADD8E6;
+    border-radius: 20px;
+    height: 120px;
+    padding: 10px;
+  }
+  .then{
+    opacity: 0;
+    height: 350px;
+  }
+  .sm2{
+    position: absolute;
+    left: -580px  !important;
+    bottom: 100px !important;
+  }
+  .big{
+    margin-right: 270px;
+  }
+ 
   .mySwiper{
     width: 350px !important;
   }
@@ -1644,7 +1720,9 @@ top: 55px;
     margin-left: 50px;
     width: 100%;
   }
-  
+  .right{
+    display: block;
+  }
 }
 @media (max-width: 500px){
   .videos1{
@@ -1678,5 +1756,22 @@ top: 55px;
   p{
     font-size: 15px;color: #fff;opacity: 1 !important;
     line-height: 160%;
+  }
+}
+
+
+.right{
+  display: none;
+}
+
+/* Default holatda div ko'rinmasin */
+.ng {
+  display: none;
+}
+
+/* Ekran kengligi 400px yoki undan kichik bo'lganda ko'rsatiladi */
+@media (max-width: 400px) {
+  .ng {
+    display: block; /* yoki flex, inline-block kerak bo'lsa shuni qo'ying */
   }
 }
