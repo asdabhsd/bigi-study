@@ -1792,6 +1792,8 @@ top: 55px;
 */
 /* 
 */
-
-
-
+@media (max-width: 540px){
+  body{
+    display: none;
+  }
+}
