@@ -1868,10 +1868,12 @@ top: 55px;
   }
   .text1, .special, .text2{
     width: 320px;
+    position: relative;
+    left: 30px;
   }
   .later{
     position: relative;
-    top: 500px;
+    top: 200px;
   }
 
   .video33{
