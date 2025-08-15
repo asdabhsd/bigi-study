@@ -1825,3 +1825,99 @@ top: 55px;
 */
 /* 
 */
+@media (max-width: 400px){
+  .neww{
+    width: 350px !important;
+  }
+  .neww img{
+    margin-right: 120px !important;
+  }
+}
+@media (max-width: 500px){
+  .neww{
+    width: 450px;
+  }
+  .neww img{
+    margin-right: 200px;
+  }
+}
+@media(max-width: 540px){
+
+}
+@media(max-width:331px){
+  .neww{
+    width: 300px !important;
+    height: 60px;
+    img{
+      margin-right: 70px !important;
+      scale: 0.8;
+    }
+    opacity: 0.8;
+  }
+  .text-container{
+    top: 50px;
+    scale: 0.4;
+    left: -50px;
+  }
+  .social-container{
+    scale: 0.3;
+    top: 120px;
+    left: 270px;
+    width: 80px;
+    padding-left: 0;
+    height: 220px;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .text1, .text2, .special{
+    width: 300px;
+    padding-left: 20px;
+    
+  }
+  .videos{
+    width: 300px;
+    height: max-content;
+  }
+  .fact{
+    width: 300px;
+    height: 500px;
+  }
+  .later{
+    top: 7550px;
+    left: 20px;
+  }
+  .cer{
+    top: 9350px;
+
+    gap: 10px;
+  }
+  .cer1{
+   scale: 0.95;
+   position: relative;
+   right: 40px;
+   bottom: 30px;
+  }
+  .cer2{
+    scale: 0.95;
+    position: relative;
+    left: -140px;
+    bottom: 70px;
+  }
+  .address{
+    position: relative;
+    left: -90px;
+  }
+  .documents{
+    left: -70px;
+  }
+  .contact{
+    left: -30px;
+    top: -40px;
+  }
+  .email{
+    top: -0px;
+    left: -90px;
+    position: relative;
+  }
+}
