@@ -1852,10 +1852,21 @@ top: 55px;
   }
   .text-container{
     left: 100px;
+    scale: 0.5;
+    top: 60px;
   }
   .social-container{
-    top: 300px;
+    top: 200px;
+    right: -10px;
+    height: 80px;
+      align-items: center;
+    width: 220px;
+    flex-direction: row;
+    display: flex;
+    scale: 0.4;
+
   }
+
   .video33{
     position: relative;
     left: 20px;
