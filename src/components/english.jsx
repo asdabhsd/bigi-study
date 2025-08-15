@@ -277,7 +277,7 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
   tabIndex={0} // Makes Swiper focusable so it can receive key events
 >
   <SwiperSlide className="slides">
-    <div className="videos1">
+    <div className="videos1 videos11">
     <div className="video1 doston">
     <video controls className="videos" src={video1}></video>
     <div className="ll"><p>A suggestion from a logistics  specialist,  Adbdurakhmanov Doston</p></div>

@@ -1545,7 +1545,7 @@ top: 55px;
   .push1, .push2, .push3{
     
     position: relative;
-    right: 15px;
+  
   }
   .iframe{
     scale: 0.8 !important;
@@ -1711,6 +1711,7 @@ top: 55px;
   .big{
     margin-right: 270px;
   }
+  
  
   .mySwiper{
     width: 350px !important;
@@ -1774,9 +1775,88 @@ top: 55px;
   .ng {
     display: block; /* yoki flex, inline-block kerak bo'lsa shuni qo'ying */
   }
-}
-@media (max-width: 540px){
-  body{
-    background-color: #02A9F9 !important;
+  
+  .ni{
+    display: none;
   }
+  
+  
+
 }
+
+
+/* 
+*/
+/* 
+*/
+@media(max-width:540px){
+  nav{
+    display: none;
+  }
+  .neww{
+    opacity: 1;
+    width: 500px;
+    margin-left: -10px;
+  }
+  .neww img{
+    margin-right: 250px;
+  }
+  .social-container{
+    top: 200px;
+    left: 10px;
+    
+    scale: 0.6;
+  }
+  .text-container{
+    scale: 0.5;
+    top: 0px;
+    right: -60px;
+    background-color: rgb(0, 0, 0, 0.45);
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .call{
+    margin-left: -20px;
+  }
+  .banner{
+    height: 400px;
+  }
+  .About-text{
+    padding-right: 200px;
+    box-sizing: border-box;
+  }
+  .text1, .special, .text2{
+  position: relative;
+  right: 80px;
+   width: 400px;
+  }
+  .text1{
+    margin-bottom: -30px;
+  }
+  .special{
+    margin-bottom: 50px;
+  }
+  .fact-container{
+    justify-self: center;
+    margin-right: 120px;
+  }
+  footer{
+    display: block;
+    height: 1000px;
+  }
+  .email{
+    position: relative;
+    top: 140px;
+    
+  
+  }.contact{
+    margin-top: -150px;
+  }
+  .videos{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+
