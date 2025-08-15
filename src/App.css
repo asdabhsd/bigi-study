@@ -1775,3 +1775,8 @@ top: 55px;
     display: block; /* yoki flex, inline-block kerak bo'lsa shuni qo'ying */
   }
 }
+@media (max-width: 540px){
+  body{
+    background-color: #02A9F9 !important;
+  }
+}
