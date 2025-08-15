@@ -1856,8 +1856,8 @@ top: 55px;
     top: 60px;
   }
   .social-container{
-    top: 200px;
-    right: -10px;
+    top: 230px;
+    left: 200px !important;
     height: 80px;
       align-items: center;
     width: 220px;
@@ -1865,6 +1865,13 @@ top: 55px;
     display: flex;
     scale: 0.4;
 
+  }
+  .text1, .special, .text2{
+    width: 320px;
+  }
+  .later{
+    position: relative;
+    top: 500px;
   }
 
   .video33{
