@@ -1840,6 +1840,26 @@ top: 55px;
   .neww img{
     margin-right: 200px;
   }
+  .email{
+    background-color: transparent;
+  }
+  .contact{
+    top: -50px;
+  }
+  .video333{
+   scale: 0.95;
+   left: 10px;
+  }
+  .text-container{
+    left: 100px;
+  }
+  .social-container{
+    top: 300px;
+  }
+  .video33{
+    position: relative;
+    left: 20px;
+  }
 }
 @media(max-width: 540px){
 
