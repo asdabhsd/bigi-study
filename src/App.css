@@ -704,6 +704,7 @@ padding-bottom: 20px;}
     text-align: center;
     color: white;
 }
+
 .ss{
   position: relative;
 }
@@ -1397,7 +1398,7 @@ nav{
   width: 120px;
   border-radius: 2px;
   margin-left: 5px;
-  margin-right: 220px;
+  margin-right: 120px;
   height: 50px;
 }
 
@@ -1492,6 +1493,157 @@ top: 55px;
 }
 .video2{
   width: 500px;
+  
+}
+@media(max-width: 400px){
+  .neww{
+    width: 350px;
+    margin-left: -10px;
+  }
+  .banner{
+    height: 300px !important;
+  }
+  .text-container{
+    scale: 0.4;
+    top: 70px;
+    right: 170px;
+  }
+  .About{
+    h2{
+      scale: 0.7;
+    }
+    .h4{
+      scale: 0.7;
+    }
+  }
+  .text1{
+    position: relative;
+    right: 150px;
+   
+    width: 350px;
+  }
+  .special{
+    position: relative;
+    right: 145px;
+    top: -100px;
+    padding: 10px;
+    width: 380px;
+  }
+  .text2{
+   position: relative;
+   top: -150px;
+   width: 350px;
+  margin-left: -0px;
+  margin-bottom: -200px;
+  }
+  .videos{
+    width: 350px;
+  }
+  .push1, .push2, .push3{
+    
+    position: relative;
+    right: 15px;
+  }
+  .iframe{
+    scale: 0.8 !important;
+  }
+  .email{
+    background-color: transparent;
+    left: -50px;
+  }
+  .contact{
+    left: 0;
+    margin-top: -130px;
+    width: 1000px  !important;
+   
+  }
+  .other{
+    background-color: black;
+  }
+  .address{
+    width: 350px;
+  }
+  .doston{
+    margin-left: -75px;
+  }
+  .video333{
+    scale: 0.99;
+    margin-left: -0px;
+    
+  }
+  .ot{
+    margin-left: -60px;
+    width: 350px;
+  }
+  .jr{
+    
+    width: 380px;
+  }
+  .ll{
+    
+    width: 350px;
+    margin-left:70px;
+  
+  }
+  .lll{
+   position: relative;
+   left: -70px;
+  }
+  .videos p{
+    width: 100px;
+  }
+  .m1{
+    width: 350px;
+    position: relative;
+    left: 65px;
+    margin-bottom: 10px;
+  }
+  .m2{
+    width: 390px;
+    position: relative;
+    left: 58px;
+    margin-bottom: 10px;
+  }
+  .m3{
+      width: 380px;
+      position: relative;
+      left: 60px;
+  }
+  .social-container{
+    position: absolute;
+    top: 100px;
+    left: 310px;
+    scale: 0.4;
+  }
+  .fact{
+    width: 350px;
+    height: 450px;
+    position: relative;
+    right: 10px;
+  }
+  .fact3{
+    right: 20px;
+    margin-bottom: -100px;
+  }
+  .fact-container{
+    gap: 20px;
+  }
+  .fact1{
+    margin-top: -40px;
+  }
+  .sm3{
+    position: relative;
+    bottom: 300px !important;
+    left: 100px !important;
+  }
+  .mySwiper{
+    width: 350px !important;
+  }
+  .main{
+    margin-bottom: 200px;
+    margin-left: 50px;
+    width: 100%;
+  }
   
 }
 @media (max-width: 500px){

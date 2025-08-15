@@ -18,6 +18,7 @@ import video3 from "../videos/video3.mp4";
 import video4 from "../videos/video4.mp4";
 import video8 from "../videos/video8.mp4";
 import video9 from "../videos/video9.mov";
+import langs from "../assets/language.png"
 import { Autoplay, Keyboard, Pagination, Navigation, FreeMode } from "swiper/modules";
 import { HashLink } from "react-router-hash-link";
 import quality from "../assets/quality.png";
@@ -278,33 +279,40 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
     <div className="videos1">
     <div className="video1 doston">
     <video controls className="videos" src={video1}></video>
-    <p>A suggestion from a logistics specialist, Adbdurakhmanov Doston</p>
+    <div className="ll"><p>A suggestion from a logistics  specialist,  Adbdurakhmanov Doston</p></div>
     </div>
       <div className="video3 video33">
         <video className="videos" src={video2} controls></video>
-        <p>A master class from a dispatching specialist, Rustamov Rahmatulloh</p>
+        <div><p className='jr'>A master class from a dispatching specialist, Rustamov Rahmatulloh</p></div>
       </div>
       <div className="video3 video333">
       <video controls className="videos" src={video3}></video>
-      <p>An insight on studying at the academy from an HR manager, Akhmadjanov Farrukh</p>
+      <div className="ll lll"><p>An insight on studying at the academy  <br /> from an HR manager, Akhmadjanov Farrukh</p></div>
       </div>
     </div>
 
   </SwiperSlide>
 
   <SwiperSlide className="slides">
-  <div className="videos1">
+  <div className="videos1 ot">
 <div className="video1 push1">
 <video controls className="videos" src={video8}></video>
+
+<div className="m1">
 <p>A comment from the academy graduate and Fleet specialist, Usmanov Abdukadir</p>
+</div>
+
 </div>
     <div className="video2 push2">
     <video controls className="videos" src={video4}></video>
-    <p>BIG-I STUDY is something you are looking for to be your own professional_Nurmukhammad Rustamov_GTL Logistics Update specialist</p>
+ 
+   <div className="m2">   <p>BIG-I STUDY is something you are looking for to be your own professional_Nurmukhammad Rustamov_GTL Logistics Update specialist</p></div>
+  
     </div>
     <div className="video3 push3">
     <div className="video2"><video controls className="videos" src={video9}></video>
-    <p>My journey to an earning stage at logistics_Akhrorkhanov Azizbek_ELD manager</p></div>
+
+      <div className="m3"><p>My journey to an earning stage at logistics_Akhrorkhanov Azizbek_ELD manager</p></div></div>
     </div>
   </div>
   </SwiperSlide>
@@ -324,7 +332,7 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
       </div>  
       <div className="fact-container">
         <div className="fact fact1">
-          <img src={language} alt="" />
+          <img src={langs} alt="" />
           <h4>Language upgrade</h4>
           <p>Before the main course, your English will be upgraded through American Business English Expertise!</p>
           <img className="arrow1" src={rightarrow} alt="" />
@@ -373,7 +381,7 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
           </div>
         </section>
         <div className="then">
-          <div className="small">
+          <div className="small sm3">
             <h4>Statistics #3</h4>
             <p>There are over 1 million for-hire trucking carriers in the U.S.</p>
             <div className="hundred">
@@ -391,7 +399,7 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
               </div>
               </div>
           </div>
-          <div className="small">
+          <div className="small sm2">
             <h4>Statistics #6</h4>
             <p>U.S. trucks moved over 11 billion tons of freight in the U.S.</p>
             <div className="hundred">
