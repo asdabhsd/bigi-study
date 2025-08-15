@@ -1729,6 +1729,9 @@ top: 55px;
   .videos1{
     display: block;
   }
+  body{
+    display: none;
+  }
   .mySwiper{
     margin-top: 100px;
     width: 1000px;
