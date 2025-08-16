@@ -522,7 +522,7 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
 <div className="footer">
   <div className="manzil">
   <h4>Our address</h4>
-    <p>Namangan IT PARK 2nd house, Amir Temur street, Namangan city, Namangan region, Republic of Uzbekistan</p>
+    <p>Namangan IT PARK 2nd house, Amir Temur appl street, Namangan city, Namangan region, Republic of Uzbekistan</p>
     <iframe
         title="My Location"
         src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d24088.554169029252!2d71.659337!3d41.001857!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzA2LjciTiA3McKwMzknMzMuNiJF!5e0!3m2!1sen!2sus!4v1755135674384!5m2!1sen!2sus"

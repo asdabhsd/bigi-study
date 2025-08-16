@@ -1898,6 +1898,17 @@ top: 55px;
   .footer{
     display: flex;
   }
+  .copy{
+    display: none;
+  }
+  .cer{
+    display: none;
+  }
+  .then, .main, .later{
+    display: none;
+  }.neww{
+    position: fixed !important;
+  }
 }
 
 @media(max-width:360px){
@@ -1993,6 +2004,9 @@ top: 55px;
     left: -90px;
     position: relative;
   }
+}
+footer{
+  display: none;
 }
 .footer{
   width: 500px;
