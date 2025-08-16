@@ -2009,7 +2009,7 @@ footer{
   display: none;
 }
 .footer{
-  width: 500px;
+  width: 400px;
   
   padding-left: 30px;
   padding-right: 30px;
@@ -2042,4 +2042,5 @@ footer{
   height: 300px;
 
   width: 200px;
+  margin-top: 50px;
 }
