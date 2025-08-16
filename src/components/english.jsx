@@ -277,7 +277,7 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
   tabIndex={0} // Makes Swiper focusable so it can receive key events
 >
   <SwiperSlide className="slides">
-    <div className="videos1 videos11">
+    <div className="videos1 videos11p[">
     <div className="video1 doston">
     <video controls className="videos" src={video1}></video>
     <div className="ll"><p>A suggestion from a logistics  specialist,  Adbdurakhmanov Doston</p></div>
@@ -518,6 +518,49 @@ Stage 3️⃣: Joining free practice and trainings at our partner companies as a
  
   <p className="copy ofenglish">Copyright © 2025 ETAMIN</p>
 </footer>
+
+<div className="footer">
+  <div className="manzil">
+  <h4>Our address</h4>
+    <p>Namangan IT PARK 2nd house, Amir Temur street, Namangan city, Namangan region, Republic of Uzbekistan</p>
+    <iframe
+        title="My Location"
+        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d24088.554169029252!2d71.659337!3d41.001857!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzA2LjciTiA3McKwMzknMzMuNiJF!5e0!3m2!1sen!2sus!4v1755135674384!5m2!1sen!2sus"
+        width="300px"
+        height="200px"
+        style={{ border: 0 ,borderRadius: '15px', marginTop: '35px'}}
+        allowFullScreen
+        loading="lazy"
+        className="brr"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+  </div>
+  <div className="dokument">
+  <h4>Documents</h4>
+   <a href="https://bigi.uz/static/media/Tasdiqnoma.5d52b6f1064f55a1ac7a.pdf"><p>licence</p></a>
+    <a href="https://bigi.uz/static/media/Tasdiqnoma.5d52b6f1064f55a1ac7a.pdf"><p>Certificate</p></a>
+   <a href="https://bigi.uz/static/media/Affidavit.2bf6195cbde30d929bb1.pdf" ><p>Affidavit</p>  </a>
+  </div>
+  <div className="kontakt">
+  <h4>Contact numbers</h4>
+    <p>+998 95 727 00 17</p>
+    <p>+99890 553 90 95</p>
+  </div>
+  <div className="eemail">
+    <h4>email</h4>
+    <p>studybigi@gmail.com</p>
+  </div>
+  <div className="dip1">
+    <img src={certificate} alt="" />
+  </div>
+  <div className="dip2">
+    <img src={certificate2} alt="" />
+  </div>
+  <div className="div">
+  Copyright © 2025 ETAMIN
+  </div>
+</div>
+
 <div className="cer">
   <div className="cer1">
     <img  onClick={small}  src={certificate} alt="" />
@@ -549,6 +592,7 @@ ETAMIN</p>
      
   </div>
  </div>
+
     </>
   );
 }

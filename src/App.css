@@ -1892,10 +1892,14 @@ top: 55px;
     position: relative;
     left: 20px;
   }
+  footer{
+    display: none;
+  }
+  .footer{
+    display: flex;
+  }
 }
-@media(max-width: 540px){
 
-}
 @media(max-width:360px){
   .neww{
     width: 300px !important;
@@ -1989,4 +1993,39 @@ top: 55px;
     left: -90px;
     position: relative;
   }
+}
+.footer{
+  width: 500px;
+  
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  height: max-content;
+  padding-bottom: 10px;
+  display: flex;
+  padding-top: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white !important;
+  a{
+    color: white !important;
+  }
+}
+.manzil{
+  width: 90% !important;
+}
+.dip1, .dip2{
+   width: 300px;
+   height: 200px;
+   img{
+    width: 100%;
+    height: 100%;
+   }
+}
+.dip1{
+  transform: rotate(-90deg) translateY(-160px) translateX(-30px);
+  height: 300px;
+
+  width: 200px;
 }
