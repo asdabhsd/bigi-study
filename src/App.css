@@ -1918,9 +1918,26 @@ top: 55px;
   }
   .text1, .text2, .special{
     width: 300px;
-    padding-left: 20px;
+    position: relative !important;
+    right: 300px !important;
+    left: -120px;
     
   }
+  .text2{
+    left: -60px;
+  }
+  .video333{
+    position: relative;
+    left: 30px;
+  }
+  .cer{
+    position:absolute !important;
+    top: 9700px !important;
+  }
+  footer{
+    height: 1300px;
+  }
+  
   .videos{
     width: 300px;
     height: max-content;
@@ -1954,6 +1971,7 @@ top: 55px;
     position: relative;
     left: -90px;
   }
+  
   .documents{
     left: -70px;
   }
