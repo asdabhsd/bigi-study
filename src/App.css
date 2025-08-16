@@ -1871,6 +1871,12 @@ top: 55px;
     position: relative;
     left: 30px;
   }
+  .bigimage1, .bigimage1{
+    display: none;
+  }
+  .hash a.active{
+      background-color: red;
+  }
   .later{
     position: relative;
     top: 200px;
