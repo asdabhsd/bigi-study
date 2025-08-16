@@ -1856,20 +1856,26 @@ top: 55px;
     top: 60px;
   }
   .social-container{
-    top: 230px;
+    top: 210px;
     left: 200px !important;
     height: 80px;
       align-items: center;
-    width: 220px;
+    width: 210px;
     flex-direction: row;
     display: flex;
     scale: 0.4;
 
   }
   .text1, .special, .text2{
-    width: 320px;
+    width: 350px;
     position: relative;
-    left: 30px;
+    left: -80px;
+  }
+  .text1{
+    margin-bottom: -50px;
+  }
+  .special{
+    margin-bottom: 50px;
   }
   .bigimage1, .bigimage1{
     display: none;
@@ -1937,7 +1943,6 @@ top: 55px;
   footer{
     height: 1300px;
   }
-  
   .videos{
     width: 300px;
     height: max-content;
