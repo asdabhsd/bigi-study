@@ -53,11 +53,15 @@
  transform: rotate(90deg);
  .exit{
   position: absolute;
+  display: none !important;
   left: -520px;
   color: #3b3838;
   z-index: 9999;
   
 }
+}
+.kros{
+  display: none;
 }
 
 .exit{
@@ -1871,12 +1875,44 @@ top: 55px;
     position: relative;
     left: -80px;
   }
-  .text1{
-    margin-bottom: -50px;
+  .eemail{
+    position: relative;
+    bottom: 20px;
   }
-  .special{
-    margin-bottom: 50px;
+  .dip1{
+    position: relative;
+    bottom: 60px;
+    left: 50px;img{
+      border-radius: 10px;
+    }
   }
+  .dip2{
+    position: relative;
+    bottom: 100px;img{
+      border-radius: 10px;
+    }
+  }
+  .div{
+    position: relative;
+    left: 50px;
+   
+  }
+ .text1{
+  position: relative;
+  left: -100px;
+ }
+ .special{
+  position: relative;
+  left: -100px;
+ }
+ .text2{
+  position: relative;
+  left: -100px;
+ }
+ .video333{
+  position: relative;
+  left: -15px;
+ }
   .bigimage1, .bigimage1{
     display: none;
   }
@@ -1892,11 +1928,9 @@ top: 55px;
     position: relative;
     left: 20px;
   }
-  footer{
-    display: none;
-  }
+  
   .footer{
-    display: flex;
+    display: block;
   }
   .copy{
     display: none;
@@ -1930,6 +1964,7 @@ top: 55px;
     scale: 0.3;
     top: 120px;
     left: 270px;
+    padding-left: 20px;
     width: 80px;
     padding-left: 0;
     height: 220px;
@@ -2005,12 +2040,21 @@ top: 55px;
     position: relative;
   }
 }
-footer{
-  display: none;
+@media(max-width:500px){
+  .footer{
+    top: 7900px !important;
+    opacity: 1 !important;
+    position: absolute;
+  }
 }
 .footer{
   width: 400px;
-  
+
+position: absolute;
+
+
+top: 0;
+opacity: 0;
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
@@ -2026,6 +2070,7 @@ footer{
     color: white !important;
   }
 }
+
 .manzil{
   width: 90% !important;
 }
@@ -2038,9 +2083,18 @@ footer{
    }
 }
 .dip1{
-  transform: rotate(-90deg) translateY(-160px) translateX(-30px);
+  transform: rotate(-90deg);
   height: 300px;
 
   width: 200px;
-  margin-top: 50px;
+  
+}
+.nav, nav{
+  background-color: transparent !important;
+}
+*{
+  margin: 0;
+}
+nav{
+  opacity: 0;
 }
