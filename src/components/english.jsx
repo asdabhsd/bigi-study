@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import banner from "../assets/banner.png";
-import logo from "../assets/Screenshot_2025-08-13_133729-removebg-preview.png";
+import logo from "../assets/o.png";
 import { FaGlobe } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import { TbMessageDots } from "react-icons/tb";
@@ -33,13 +33,13 @@ import hally from "../flowing images/hally.jpg"
 import itpark from "../flowing images/itpark.jpg"
 import noor from "../flowing images/noor.jpg"
 import taxir from "../flowing images/taxir.webp"
-import { NavLink } from "react-router-dom";
+import { NavLink  } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { RiFullscreenFill } from "react-icons/ri";
 import { RxCross1 } from "react-icons/rx";
 
 export default function English() {
- 
+
   
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -118,8 +118,10 @@ export default function English() {
       <header>
         <div className={`nav ${scrolled ? "scrolled" : ""}`}>
           <div className="container">
-            <img src={logo} alt="Logo" className="logo" />
+           <div className="lc"> <img src={logo} alt="Logo" className="logo" /></div>
+            <div className="os">
 
+            </div>
             {/* Smooth scroll links */}
             <HashLink smooth to="/#Home" className="btn">Home</HashLink>
             <HashLink smooth to="/#About" className="btn">About</HashLink>
@@ -127,8 +129,15 @@ export default function English() {
             <HashLink smooth to="/#Facts" className="btn">Facts</HashLink>
             <HashLink smooth to="/#Statistics" className="btn">Statistics</HashLink>
             <HashLink smooth to="/#Partners" className="btn">Partners</HashLink>
-            <button className="re">Registration</button>
+          
+            <button 
+  onClick={() => window.location.href = "https://forms.gle/ERErkFSYCJSQxREb9"} 
+  className="re"
+>
+  Registration
+</button>
 
+            
             {/* Language selector */}
            
               
@@ -154,7 +163,7 @@ export default function English() {
             <HashLink smooth to="/#Facts" className="link">Facts</HashLink>
             <HashLink smooth to="/#Statistics" className="link">Statistics</HashLink>
             <HashLink smooth to="/#Partners" className="link">Partners</HashLink>
-            <button className="reg">Registration</button>
+            <a href="https://forms.gle/ERErkFSYCJSQxREb9">register</a>
            </div>
             
 
