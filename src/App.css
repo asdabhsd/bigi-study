@@ -2126,3 +2126,8 @@ nav{
   border-top-left-radius: 5px;
 }
 
+
+.social-container{
+  background-color: transparent;
+  border: none;
+}

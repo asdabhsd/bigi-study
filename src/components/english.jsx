@@ -94,6 +94,7 @@ export default function English() {
           <a href="#Facts">Facts</a>
           <a href="#Statistics">Statistics</a>
           <a href="#Partners">Partners</a>
+          <a className="small-register" href="https://forms.gle/ERErkFSYCJSQxREb9">register</a>
         </div>
       )}
     </div>
@@ -123,13 +124,13 @@ export default function English() {
 
             </div>
             {/* Smooth scroll links */}
-            <HashLink smooth to="/#Home" className="btn">Home</HashLink>
+            <HashLink smooth to="/#Home" className="btn">Homes</HashLink>
             <HashLink smooth to="/#About" className="btn">About</HashLink>
             <HashLink smooth to="/#News" className="btn">News</HashLink>
             <HashLink smooth to="/#Facts" className="btn">Facts</HashLink>
             <HashLink smooth to="/#Statistics" className="btn">Statistics</HashLink>
             <HashLink smooth to="/#Partners" className="btn">Partners</HashLink>
-          
+            
             <button 
   onClick={() => window.location.href = "https://forms.gle/ERErkFSYCJSQxREb9"} 
   className="re"
@@ -198,9 +199,7 @@ export default function English() {
 
       {/* Social icons */}
       <section className="social-container">
-        <div className="al">
-        <RxCross1 className="kros"/>
-        </div>
+       
         <a href="https://t.me/bigiedu_admin"
       target="_blank"
       rel="noopener noreferrer"
